@@ -2,11 +2,9 @@ using System;
 
 public class Fraction
 {
-    // Private attributes
     private int numerator;
     private int denominator;
 
-    // Constructors
     public Fraction()
     {
         numerator = 1;
@@ -22,10 +20,9 @@ public class Fraction
     public Fraction(int numerator, int denominator)
     {
         this.numerator = numerator;
-        this.denominator = denominator == 0 ? 1 : denominator; // Avoid division by zero
+        this.denominator = denominator == 0 ? 1 : denominator; 
     }
 
-    // Getters and Setters
     public int Numerator
     {
         get { return numerator; }
@@ -35,10 +32,9 @@ public class Fraction
     public int Denominator
     {
         get { return denominator; }
-        set { denominator = value == 0 ? 1 : value; } // Avoid division by zero
+        set { denominator = value == 0 ? 1 : value; } 
     }
 
-    // Methods
     public string GetFractionString()
     {
         return $"{numerator}/{denominator}";

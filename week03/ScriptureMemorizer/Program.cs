@@ -9,10 +9,11 @@ class Program
 
     static void Main()
     {
+        Console.WriteLine("Current Directory: " + Directory.GetCurrentDirectory());
         Console.WriteLine("Welcome to the Scripture Memorizer!");
 
         // Load scriptures from file
-        LoadScriptures("scriptures.txt");
+        LoadScriptures(@"C:\Users\JannaReyes\OneDrive\Documents\cse210-hw\week03\ScriptureMemorizer\scriptures.txt");
 
         if (scriptures.Count == 0)
         {

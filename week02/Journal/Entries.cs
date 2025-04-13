@@ -1,3 +1,7 @@
+// Stored in a file for future retrieval.
+// Easy to add more prompts or additional entry attributes.
+// Clear separation of logic into classes, facilitating future updates.
+
 using System;
 
 class Entry
